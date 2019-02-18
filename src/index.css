@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: auto;
   margin-left: 10px;
+  background-image: url("https://www.anasfim.com/p/2018/03/blank-old-newspaper-background-templates-corner-intended-for-blank-old-newspaper-background.jpg")
 }
 
 code {
@@ -25,6 +26,8 @@ code {
 .iltalehtiHeader {
   color: red;
   text-align: center;
+  font-family: Rubik;
+  font-style: italic;
 }
 
 #newsText {
@@ -41,6 +44,8 @@ code {
 .cnnHeader {
   color: rgb(129, 70, 70);
   text-align: center;
+  font-family: Rubik;
+  font-style: italic;
 }
 
 #bbc {
@@ -52,6 +57,34 @@ code {
 
 .bbcHeader {
   text-align: center;
+  font-family: Rubik;
+  font-style: italic;
+}
+
+#bbcSport {
+  border-bottom: solid 1px black;
+  border-left: solid 5px black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.bbcSportHeader {
+  text-align: center;
+  font-family: Rubik;
+  font-style: italic;
+}
+
+#nyTimes {
+  border-bottom: solid 1px black;
+  border-left: solid 5px black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.nyTimesHeader {
+  text-align: center;
+  font-family: Rubik;
+  font-style: italic;
 }
 
 #newsButtonDiv {
@@ -68,6 +101,14 @@ a {
 
 .mainTitle {
   text-align: center;
+  font-size: 60px;
+  font-family: "Covered By Your Grace"
+}
+
+.powered {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Covered By Your Grace"
 }
 
 
