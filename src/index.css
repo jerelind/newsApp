@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: auto;
+  margin-left: 10px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#iltalehti {
+  border-bottom: solid 1px red;
+  border-left: solid 5px red;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.iltalehtiHeader {
+  color: red;
+  text-align: center;
+}
+
+#newsText {
+  margin-left: 10px;
+}
+
+#cnn {
+  border-bottom: solid 1px rgb(153, 40, 40);
+  border-left: solid 5px rgb(153, 40, 40);
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.cnnHeader {
+  color: rgb(129, 70, 70);
+  text-align: center;
+}
+
+#bbc {
+  border-bottom: solid 1px black;
+  border-left: solid 5px black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.bbcHeader {
+  text-align: center;
+}
+
+#newsButtonDiv {
+  text-align: center;
+}
+
+#headerDiv {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+.mainTitle {
+  text-align: center;
+}
+
+
