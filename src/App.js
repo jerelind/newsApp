@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import Togglable from './Togglable'
+import apiKey from './apiKey'
 
 class App extends Component {
   constructor() {
@@ -16,10 +17,10 @@ class App extends Component {
 
   componentDidMount() {
     const iltalehtiUrl = "https://api.il.fi/v1/articles/iltalehti/lists/latest?limit=40&categories[]=uutiset"
-    const cnnUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=4234ddd9eba8479c8f49bb5625f26a38"
-    const bbcUrl = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=4234ddd9eba8479c8f49bb5625f26a38"
-    const bbcSportUrl = "https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=4234ddd9eba8479c8f49bb5625f26a38"
-    const nyTimesUrl = "https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=4234ddd9eba8479c8f49bb5625f26a38"
+    const cnnUrl = `https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=${apiKey}`
+    const bbcUrl = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`
+    const bbcSportUrl = `https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=${apiKey}`
+    const nyTimesUrl = `https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=${apiKey}`
 
     axios.all([axios.get(iltalehtiUrl), axios.get(cnnUrl), axios.get(bbcUrl), axios.get(bbcSportUrl), axios.get(nyTimesUrl)])
          .then(axios.spread((iltalehtiUrl, cnnUrl, bbcUrl, bbcSportUrl, nyTimesUrl) => {
@@ -100,4 +101,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
